@@ -1,13 +1,18 @@
-// do while loops
+// if statements, goes through the code once if applicable, no looping
+// const age = 25;
 
-let i = 5;
-while(i < 5){
-    console.log('val of i is: ', i);
-    i++;
-} // wouldn't run at all because 5 isn't less than 5
+// if(age > 20){
+//     console.log('you are over 20 years old');
+// }
 
-do{
-    console.log('val of i is: ', i);
-    i++;
+// const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
+
+// if(ninjas.length > 3) {
+//     console.log("that's a lot of ninjas"); // used " " so the appostrophe didn't end the string
+// }
+
+const password = 'p@ssword';
+
+if(password.length >= 8){
+    console.log('that password is long enough!');
 }
-while(i < 5);

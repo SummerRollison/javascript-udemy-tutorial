@@ -1,24 +1,11 @@
-// switch statements
-const grade = 'D';
+// variables & block scope
+let age = 30;
 
-switch(grade){
-    case 'A': 
-        console.log('you got an A!');
-        break;
-    case 'B': 
-        console.log('you got a B!');
-        break;
-    case 'C': 
-        console.log('you got a C');
-        break;
-    case 'D': 
-        console.log('you got a D');
-        break;
-    case 'E': 
-        console.log('you got an E');
-        break;
-    default:
-        console.log('not a valid grade');
+
+if(true){
+    let age = 40;
+    let name = 'shaun';
+    console.log('inside 1st code block', age, name);
 }
 
-// uses strict equality
+console.log('outside code block', age, name);

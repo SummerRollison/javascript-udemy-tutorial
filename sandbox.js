@@ -1,18 +1,11 @@
-// if statements, goes through the code once if applicable, no looping
-// const age = 25;
+// else if statements
 
-// if(age > 20){
-//     console.log('you are over 20 years old');
-// }
+const password = 'p@ssword1234';
 
-// const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
-
-// if(ninjas.length > 3) {
-//     console.log("that's a lot of ninjas"); // used " " so the appostrophe didn't end the string
-// }
-
-const password = 'p@ssword';
-
-if(password.length >= 8){
+if(password.length >= 12){
+    console.log('that password is mighty strong!');
+}else if(password.length >= 8){
     console.log('that password is long enough!');
+} else {
+    console.log('password is not long enough');
 }

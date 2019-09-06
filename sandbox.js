@@ -1,18 +1,26 @@
-// Math object
+// Primitive values
 
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.E);
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
 
-const area = 7.7;
-console.log(Math.round(area)); // rounds
-console.log(Math.floor(area)); // rounds down
-console.log(Math.ceil(area)); // rounds up
-console.log(Math.trunc(area)); // removes decimal
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-// random numbers
+// scoreOne = 100;
 
-const random = Math.random();
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-console.log(random);
-console.log(Math.round(random * 57));
+// //reference values
+
+
+userOne = { name: 'ryu', age: 30 };
+userTwo = userOne;
+
+console.log(userOne, userTwo);
+
+userOne.age = 40;
+
+console.log(userOne, userTwo);
+
+userTwo.age = 70;
+
+console.log(userOne, userTwo);

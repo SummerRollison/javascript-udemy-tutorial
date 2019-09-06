@@ -1,15 +1,20 @@
-// functions vs. methods
-const name = 'shaun';
+// callbacks & foreach
 
-// functions
+// const myFunc = (callbackFunc) => {
+//     // do something
+//     let value = 50;
+//     callbackFunc(value);
+// };
 
-const greet = () => 'hello';
+// myFunc(value => {
+//     // do something
+//     console.log(value);
+// });
 
-let resultOne = greet();
-console.log(resultOne);
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
 
+const logPerson = (person, index) => {
+    console.log(`${index} - hello ${person}`)
+};
 
-// methods - functions that are associated with an object or data type
-
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+people.forEach(logPerson);

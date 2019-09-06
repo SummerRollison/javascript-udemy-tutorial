@@ -1,36 +1,15 @@
-// Regular function
+// functions vs. methods
+const name = 'shaun';
 
-// const calcArea = function(radius){
-//     return 3.14 * radius**2;
-// }
+// functions
 
-// arrow function
-// const calcArea = (radius) => 3.14 * radius**2;
-// const area = calcArea(5);
-// console.log('area is:', area);
+const greet = () => 'hello';
 
-// const greet = function(){
-//     return 'hello, world';
-// };
+let resultOne = greet();
+console.log(resultOne);
 
-// const greet = () => 'hello, world';
-// const result = greet();
-// console.log(result);
 
-// const bill = function(products, tax){
-//     let total = 0;
-//     for(let i = 0; i <products.length; i++){
-//         total += products[i] + products[i] * tax;
-//     }
-//     return total;
-// }
+// methods - functions that are associated with an object or data type
 
-const bill = (products, tax) => {
-    let total = 0;
-    for(let i = 0; i <products.length; i++){
-        total += products[i] + products[i] * tax;
-    }
-    return total;
-}
-
-console.log(bill([10,15,30], 0.2));
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
